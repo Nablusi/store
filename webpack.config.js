@@ -8,7 +8,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
-    clean: true,
+    clean: true
   },
   devServer: {
     static: {
@@ -51,7 +51,7 @@ module.exports = {
               esModule: false,
             }
           },
-          "rtlcss-loader"
+          "rtl-css-loader"
         ]
       },
       {
