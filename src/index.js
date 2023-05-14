@@ -5,4 +5,18 @@ import "@fortawesome/fontawesome-free/js/all.min.js";
 
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
-const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+
+
+let card = document.querySelectorAll(".card-main");
+
+for(let i=0;i<card.length;i++){
+    card[i].onmouseover = function(){
+        card[i].classList.add("active");
+        console.log("hovered")
+    }
+    card[i].onmouseout = function(){
+        card[i].classList.remove("active");
+        console.log("removed hoverd")
+    }
+}

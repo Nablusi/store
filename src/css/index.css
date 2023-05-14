@@ -234,3 +234,71 @@ body {
 }
 
 
+/* carousel main starts */
+.container-main{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container-main .carousel-inner-main .carousel-item .card-container {
+    gap: 30px;
+    margin-top:30px;
+    justify-content: center;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card-body h5 span{
+    left: 20px;
+    color:#b1dbe6;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card-body p svg.checked{
+    color:orange;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .sales{
+    background-color:#b1dbe6;
+    top: 20px;
+    left: 20px;
+    padding: 5px;
+    color:#fff;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card{
+    width:250px;
+    position: relative;
+}
+.container-main .carousel-indicators-main{
+   bottom: -60px !important;
+}
+.container-main .carousel-indicators-main button{
+   width: 15px;
+   height: 15px;
+   background-color: #555555;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card::after{
+    background-color: #b1dbe691;
+    content: "";
+    height: 95%;
+    position: absolute;
+    width: 92%;
+    top: 2%;
+    left: 4%;
+    display: none;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card.active .cart-btn{
+    background-color: #fff;
+    color: #b1dbe6;
+    left: 24%;
+    position: absolute;
+    top: 34%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card .cart-btn{
+    display: none;
+    z-index: 3;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card.active{
+    border-color:#b1dbe6 !important;
+}
+.container-main .carousel-inner-main .carousel-item .card-container .card.active::after{
+    display: flex;
+}
+
+/* carousel main ends */
