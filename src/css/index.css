@@ -19,7 +19,6 @@ body {
     line-height: 1.5;
     color: black;
     overflow-x: hidden;
-    direction: rtl;
 }
 
 
@@ -30,7 +29,14 @@ body {
     padding: 15px 0;
 }
 
-
+.checkbox.ms-2{
+    display: flex;
+    padding-right: 5px;
+}
+.dropdown-item{
+    display: flex;
+    padding-right: 5px;
+}
 
 
 .dropdown a.categories  {
@@ -178,6 +184,53 @@ body {
 #carousel-featured .carousel-control-prev .fa-chevron-left {
     color: #868686;
     font-size: 38px;
+}
+
+
+.row.characteristics{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: 600px;
+    margin: 0px auto;
+    background-color: white;
+    transform: translate(0, -48px);
+    overflow: hidden;
+}
+
+.container .row .card-container .card img{
+    width:40px;
+}
+
+
+.container .row .card-container{
+    gap:60px;
+    position: relative;
+}
+.container .row .card-container .card:not(:last-child)::after{
+    position: absolute;
+    content:"";
+    height: 50px;
+    width: 1px;
+    background-color: #555555;
+    left: -27px
+}
+
+
+
+.container .row .card-container .card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.container .row.characteristics h2{
+    margin-bottom: 15px;
+}
+.container .row.characteristics .background-img-one{
+    height: 100px;
+    width: 100px;
+    left: -10px;
+    top: -18px;
 }
 
 

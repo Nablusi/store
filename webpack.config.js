@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -77,6 +78,7 @@ module.exports = {
 new MiniCssExtractPlugin({
     filename:"css/store.css",
   }),
-  new CssMinimizerPlugin()
+  new CssMinimizerPlugin(),
+  new CleanWebpackPlugin(),
 ],
 }
